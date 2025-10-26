@@ -1,0 +1,158 @@
+/* Component Styles - Extracted from Client Components */
+
+/* NOTE: VRViewer and PhotoGallery components still use inline styled-jsx 
+   They are Client Components (with 'use client') so styled-jsx works fine.
+   If you encounter issues, extract their styles here. */
+
+/* Timeline Carousel Component */
+.timeline-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.carousel-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.carousel-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.carousel-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-btn {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  flex-shrink: 0;
+}
+
+.nav-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.carousel-content {
+  flex: 1;
+}
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f0f0f0;
+}
+
+.main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.audio-controls,
+.video-container {
+  margin-top: 1rem;
+}
+
+.audio-btn {
+  padding: 0.75rem 1.5rem;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.audio-btn:hover {
+  background: #0051bb;
+}
+
+.video-container video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.carousel-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #0070f3;
+}
+
+.item-counter {
+  margin: 0;
+  color: #666;
+}
+
+.related-photos {
+  margin-top: 3rem;
+}
+
+.related-photos h3 {
+  margin-bottom: 1rem;
+}
+
+.photos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.related-photo {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.related-photo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .carousel-main {
+    flex-direction: column;
+  }
+  
+  .nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+

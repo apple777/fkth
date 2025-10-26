@@ -1,0 +1,74 @@
+[{
+  "data_models": {
+    "map_layers_model": {
+      "description": "Data structure for points of interest on the map, including geographical coordinates and links to 360 panoramic views (using react-map-gl and pannellum-react).",
+      "model_name": "MapPOI",
+      "schema_fields": {
+        "id": "string | primary_key",
+        "coordinates": "[number, number] | required | [Longitude, Latitude] for map placement [2]",
+        "stone_title": {
+          "he": "string | Hebrew title of the Point of Interest (Stonetitle)",
+          "en": "string | English title of the Point of Interest"
+        },
+        "vr_360_url": "string | URL for the 360-degree image resource (vr360imgurl)",
+        "vr_title": {
+          "he": "string | Hebrew title for the 360 view (vrtitle)",
+          "en": "string | English title for the 360 view"
+        },
+        "vr_hotspot": {
+          "hotspot_img_url": "string | Image URL for the clickable element inside the 360 viewer (vrhotspotimg)",
+          "hotspot_title": {
+            "he": "string | Hebrew title/caption for the hotspot (vrhotspottitle)",
+            "en": "string | English title/caption for the hotspot"
+          }
+        }
+      }
+    },
+    "film_carousel_model": {
+      "description": "Data structure for individual multimedia items (film) used in timelines and galleries (using @fancyapps/ui and react-image-gallery).",
+      "model_name": "CarouselItem",
+      "schema_fields": {
+        "id": "number | primary_key (index)",
+        "years_range": "string | Historical time period (e.g., '1884-1900') (years)",
+        "title_default": {
+          "he": "string | Main Hebrew title",
+          "en": "string | Main English title"
+        },
+        "title_hover": {
+          "he": "string | Hebrew title on hover (title-hover - VARS)",
+          "en": "string | English title on hover"
+        },
+        "title_toggle": {
+          "he": "string | Hebrew title when item is expanded/toggled (title-toggle)",
+          "en": "string | English title when item is expanded/toggled"
+        },
+        "image_assets": {
+          "url_thumb": "string | URL for thumbnail image (itemurlimgthumb)",
+          "url_large": "string | URL for large, optimized image (itemurlimgbig) [3]",
+          "alt_text": {
+            "en": "string | English alt text for accessibility (english alt=)"
+          }
+        },
+        "media_assets": {
+          "voiceover_url": "string | URL for audio voiceover (itemvoiceoverurl)",
+          "text_content_id": "string | ID linking to long-form text content (itemtexturl)",
+          "video_url": "string | URL for video content (itemvideo)"
+        },
+        "related_photos_array":[]
+      }
+    },
+    "win_section_model": {
+      "description": "Data structure for thematic collections or chapters, grouping related 'film' items (Win section).",
+      "model_name": "Collection",
+      "schema_fields": {
+        "collection_id": "string | primary_key",
+        "title": {
+          "he": "string | Hebrew title of the collection",
+          "en": "string | English title of the collection (title)"
+        },
+        "years_range": "string | Overarching time period for the collection (years)",
+        "film_item_references": "array of string | Foreign keys linking to CarouselItem IDs (VARS - film)"
+      }
+    }
+  }
+}]
