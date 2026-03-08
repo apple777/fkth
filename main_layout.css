@@ -1,0 +1,322 @@
+/*-- makes the wall all over the body background --*/
+          
+html, body {
+	height:100%;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	/*text-align:center; this text-align among others things is respond to centerd footer menu */
+	overflow:hidden;
+}
+
+a:hover {
+	cursor:pointer;
+}
+
+#page-background {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	background:#ebd5a1;
+}
+
+#container {
+	position:relative;
+	width:1020px;
+	height:700px;
+	margin:0px auto;
+	padding:0px;
+}
+
+#header {
+/* contains top site section */
+	position:relative;
+	margin:0px auto;
+	width:880px;
+	height:100px;
+	text-align:right;
+}
+
+#window {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:222px;
+	height:100px;
+}
+
+#title {
+	position:absolute;
+	top:0px;
+	right:245px;
+	width:323px;
+	height:100px;
+	text-align:center;
+	background:url(images/logo.png) no-repeat center right;
+}
+
+	#title:hover {
+	-webkit-animation:myfirst 5s; /* Safari and Chrome */
+	}
+
+
+@keyframes myfirst
+{
+from {
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	-o-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
+	-webkit-transition: -webkit-transform 2s ease-in-out;
+	-moz-transition: -moz-transform 2s ease-in-out;
+	-o-transition: -o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out;
+	}
+to {
+	-webkit-transform: rotateZ(2deg);
+	-moz-transform: rotateZ(2deg);
+	-o-transform: rotateZ(2deg);
+	transform: rotateZ(2deg);
+	-webkit-transition: -webkit-transform 2s ease-in-out;
+	-moz-transition: -moz-transform 2s ease-in-out;
+	-o-transition: -o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out;
+	}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {
+	-webkit-transform: rotateZ(0deg);
+	-moz-transform: rotateZ(0deg);
+	-o-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
+	-webkit-transition: -webkit-transform 2s ease-in-out;
+	-moz-transition: -moz-transform 2s ease-in-out;
+	-o-transition: -o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out;
+}
+to {
+	-webkit-transform: rotateZ(2deg);
+	-moz-transform: rotateZ(2deg);
+	-o-transform: rotateZ(2deg);
+	transform: rotateZ(2deg);
+	-webkit-transition: -webkit-transform 2s ease-in-out;
+	-moz-transition: -moz-transform 2s ease-in-out;
+	-o-transition: -o-transform 2s ease-in-out;
+	transition: transform 2s ease-in-out;
+	}
+}
+  
+/*#search {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:275px;
+	height:100px;
+	background:url(images/book.png) no-repeat center right;
+}
+
+#search label{
+	position:relative;
+	top:33px;
+}
+
+input[type="search"] {
+	position:relative;
+	top:33px;
+	right:47px;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	-moz-border-radius:11px;
+	-webkit-border-radius:11px;
+	border-radius:11px;
+	-webkit-input-placeholder
+	
+	//end of div header style
+}
+*/
+#content {
+	/* contains middle site section */
+	margin:0px auto;
+	width:880px;
+	height:350px;
+}
+
+#img_window img {
+	/* help to show image before the js window animation */
+	position:absolute;
+	top:12px;
+	right:50px;
+	/*background:url(win-ani.gif) no-repeat center 0px;*/
+}
+
+#nav_window {
+	/*overflow:scroll; right:37px;=without animation*/
+	position:absolute;
+	top:72px;
+	right:102px;
+	width:160px;
+	height:363px;
+}
+
+#map {
+	/* create map UI section = map border #402d1d */
+	float:left;
+	width:633px;
+	height:350px;
+	background:url(images/map.jpg) no-repeat right top;
+	/* #nav_map */
+	border:3px solid #402d1d;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+}
+
+#ajax1 {
+	width:633px;
+	height:350px;
+}
+		/* helping to the AJAX manipulate content  */
+		#map_con {
+			position:relative;
+			width:633px;
+			height:350px;
+			top:0px;
+			left:0px;
+			z-index:1;
+		}
+
+		.roseta {
+			width:22px;
+			height:22px;
+			background:url(images/hotspot.png) no-repeat right top;
+		}
+		.roseta_pink {
+			width:22px;
+			height:22px;
+			background:url(images/hotspot_pink.png) no-repeat right top;
+		}
+
+/*#hotspot1{ title="ישראל דב פרומקין" 
+position:absolute;top:305px;left:301px;}*/
+#hotspot2{/* title="אליעזר בן-יהודה" */
+position:absolute;top:12px;left:333px;}
+#hotspot3{/* title="הרב אברהם יצחק הכהן קוק" */
+position:absolute;top:177px;left:300px;}
+#hotspot4{/* title="הרב בן-ציון מאיר חי עוזיאל" */
+position:absolute;top:280px;left:333px;}
+#hotspot5{/* title="לאה אבושדיד ואיתמר בן אב'י" */
+position:absolute;top:227px;left:403px;}
+#hotspot6{/* title="אברהם אלברט ואנה טיכו" */
+position:absolute;top:185px;left:250px;}
+#hotspot7{/* title="בית הספר העירוני לבנים" */
+position:absolute;top:220px;left:263px;}
+#hotspot8{/* title="גרשון אגרון,דואר היום" */
+position:absolute;top:244px;left:379px;}
+#hotspot9{/* title="משפחת גליק" */
+position:absolute;top:233px;left:333px;}
+#hotspot10{/* title="בית חינוך עיוורים" */
+position:absolute;top:164px;left:426px;}
+#hotspot11{/* title="בית מרקחת אלבא" */
+position:absolute;top:313px;left:295px;/* end of div content style */}
+
+
+#bottom_content {
+	margin:0px auto;
+	width:880px;
+	height:142px;
+}
+
+#radio {
+	direction:ltr;
+	/* fixed radio direction problams */
+	float:right;
+	width:222px;
+	height:150px;
+	background:url(images/old_radio.png) no-repeat center center;
+
+	/*-webkit-box-reflect: below 4px
+	-webkit-gradient(linear, left top, left bottom, 
+		from(transparent), to(rgba(255, 255, 255, 0.77)));
+	*/
+}
+
+#timeline {
+	direction:ltr;
+	overflow:hidden; 
+	cursor:-moz-grab;
+	position:relative;
+	top:27px;
+	/* timeline direction */
+	float:left;
+	width:639px;
+	height:116px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+}
+
+#footer {
+	position:relative;
+	bottom:33px;
+	margin:0px auto;
+	width:1020px;
+	height:240px;
+	text-align:center;
+	z-index:-1;
+	background:url(images/kook_table.png) no-repeat center center;
+}
+
+.footer_nav a,
+.footer_nav span {
+	position:relative;
+	bottom:188px;
+	left:155px;
+	/* right - move to left the footer links */
+	color:#f3b06b;
+	letter-spacing:1px;
+	padding:0px 12px 0px 12px;
+	font-size:12px;
+}
+
+.footer_nav a:hover {
+	color:#fffacd;
+	text-shadow: 0 0 10px #FFF;
+	-moz-text-shadow: 0 0 10px #FFF;
+	-webkit-text-shadow: 0 0 10px #FFF;
+	
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+
+	/* end of div bottom_content style */
+}
+
+#fancybox-content {
+	font-size:27px;
+	font-family:"David";
+	color:#000;
+	background:url(images/credits.jpg) no-repeat 0px 0px;
+	background-color:#fdf9f0;
+}
+
+marquee { 
+	width:930px;
+	height:548px;
+	margin:0px;
+	padding:0px;	
+}
+
+.doc_fancybox {
+	/* comes from #fancybox-content */
+	text-align:right;
+	font-size:27px;
+	background:url(images/credits.jpg) no-repeat 0px 0px;
+}

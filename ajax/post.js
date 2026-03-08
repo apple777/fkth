@@ -1,0 +1,684 @@
+﻿$(function(){
+
+	$(".hertzberg").click(function(){
+
+		$.post("ajax/stones.php?page=1", function(data) {
+
+			//$("#map").css({background:'url("Old_Paper.jpg")'});
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" })/*.CreateBubblePopup().hide()*/;
+
+			$("#jplayer_pause").click();
+
+			//$('.roseta,.roseta_pink').CreateBubblePopup().remove();
+
+			//persons sideBar items
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				//alert($('#galleria').galleria({debug:true,height:350,width:633}));
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+				$(".youtube-player").css({ visibility:"visible" });
+				//$("#ajax1").load("v.php #hertzberg");
+				$("audio").remove();
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" })/*.CreateBubblePopup().show()*/;
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+				$(".youtube-player").remove().empty();
+			});
+		});
+	});
+
+
+
+	$(".frumkin").click(function(){
+
+		$.post("ajax/stones.php?page=2", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".eliezer").click(function(){
+
+		$.post("ajax/stones.php?page=3", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".kook").click(function(){
+
+		$.post("ajax/stones.php?page=4", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+				$(".youtube-player").css({ visibility:"visible" });
+				$("audio").remove();
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+				$(".youtube-player").remove().empty();
+			});
+		});
+	});
+
+
+
+	$(".meyuchas").click(function(){
+
+		$.post("ajax/stones.php?page=5", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".mordechai_halevy").click(function(){
+
+		$.post("ajax/stones.php?page=6", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".harav_uziel").click(function(){
+
+		$.post("ajax/stones.php?page=7", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".itamar_leah").click(function(){
+
+		$.post("ajax/stones.php?page=8", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+				$(".youtube-player").css({ visibility:"visible" });
+				$("audio").remove();
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+				$(".youtube-player").remove().empty();
+			});
+		});
+	});
+
+
+
+	$(".albert_ticho").click(function(){
+
+		$.post("ajax/stones.php?page=9", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".nissim_levy").click(function(){
+
+		$.post("ajax/stones.php?page=10", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".mordechai_eliash").click(function(){
+
+		$.post("ajax/stones.php?page=11", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".gershon_agron").click(function(){
+
+		$.post("ajax/stones.php?page=12", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".glick_family").click(function(){
+
+		$.post("ajax/stones.php?page=13", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".institute_blind").click(function(){
+
+		$.post("ajax/stones.php?page=14", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+				$(".youtube-player").css({ visibility:"visible" });
+				$("audio").remove();
+
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+				$(".youtube-player").remove().empty();
+			});
+		});
+	});
+
+
+
+	$(".dailymail").click(function(){
+
+		$.post("ajax/stones.php?page=15", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+	$(".alba_pharmacy").click(function(){
+
+		$.post("ajax/stones.php?page=16", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_pause").click();
+
+
+			$(".gallery1").click(function() {
+				$(".album").css({ visibility:"visible" });
+				$(".stone").css({ visibility:"hidden" });
+				$('#galleria').galleria({height:350,width:633});
+			});
+
+			$(".gallery2").click(function() {
+			});
+
+			$(".gallery3").click(function() {
+
+			});
+
+			$(".gallery4").click(function() {
+				$('#ajax1').css({ visibility:"hidden" });
+				$(".roseta, .roseta_pink").css({ visibility:"visible" });
+				$("audio").remove();
+				$(".album").css({ visibility:"hidden" });
+				$("#jplayer_play").click();
+			});
+		});
+	});
+
+
+
+
+	/* - end of ajax timeline - */
+
+
+
+
+
+	$("#11").click(function(){
+
+		$.post("ajax/stones.php?page=17", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+
+	$("#22").click(function(){
+
+		$.post("ajax/stones.php?page=18", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+	$("#33").click(function(){
+
+		$.post("ajax/stones.php?page=19", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+	$("#44").click(function(){
+
+		$.post("ajax/stones.php?page=20", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+
+	$("#55").click(function(){
+
+		$.post("ajax/stones.php?page=21", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+
+	$("#77").click(function(){
+
+		$.post("ajax/stones.php?page=22", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+	$("#88").click(function(){
+
+		$.post("ajax/stones.php?page=23", function(data) {
+
+			$("#ajax1").html(data).css({ visibility:"visible" });
+			$(".roseta, .roseta_pink").css({ visibility:"hidden" });
+
+			$("#jplayer_stop").click();
+		});
+	});
+
+
+
+
+});

@@ -1,0 +1,1223 @@
+.tabbed_area {
+	background:rgba(255, 255, 255, 0);
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+
+}
+
+.spacer {
+	height:25px;
+}
+
+ul.tabs {
+	/* for buttons space ! */
+	margin:0px;
+	padding:0px;
+	margin-top:5px;
+	margin-bottom:6px;
+	text-align:center;
+}
+
+ul.tabs li {
+	list-style:none;
+	display:inline;
+	cursor:pointer;
+}
+
+ul.tabs li a {
+	/* 3 buttons - header for the menu */
+	color:#000;
+	padding:6px 4px 2px 4px;
+	text-decoration:none;
+	font-size:13px;
+	font-weight:bold;
+	background:rgba(255, 255, 255, 0.25);
+	
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+
+}
+
+ul.tabs li a:hover {
+	/* hover - header for the menu */
+	background-color:#e8e8e8;
+
+}
+ul.tabs li a.active {
+	/* active - header for the menu */
+	border-bottom:1px solid #fff;
+	background-color:#fff;
+
+}
+.content {
+	/* the menu it self */
+	font-weight:bold;
+	font-size:14px;
+	text-align:right;
+	/*font-family:Arial, Verdana, Helvetica, sans-serif;*/
+	padding-top:10px;
+	padding-bottom:10px;
+	color:rgba(0, 0, 0, 1);
+	text-shadow:0.1em 0.05em #aaa;
+	background:rgba(255, 255, 255, 0.35);
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	cursor:pointer;
+
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+
+}
+
+#content_2, #content_3 { display:none; }
+
+.content ul {
+	margin:0px;
+	padding:0px 5px 0px 5px;
+}
+.content ul li {
+	/* for spacing between lines ! */
+	list-style:none;
+	border-bottom:1px solid rgba(91, 91, 91, 0.22);
+	padding-top:4px;
+	padding-bottom:4px;
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+}
+
+.content ul li:last-child {
+	border-bottom:none;
+}
+.content ul li a {
+	text-decoration:none;
+	color:#000;
+}
+
+.content ul li a:hover {
+	color:#74461B;
+}
+
+
+/*-- for none avilable windows items --*/
+.content .off {
+	color:#656565;
+}
+.content .off:hover {
+	color:#656565;
+}
+
+/*-- timeline css --*/
+
+
+
+
+
+#timeline {
+	font:12px arial, verdana, sans-serif; 
+	height:116px;
+	/*height:depends on #timeline {height:116px;} on main style file*/
+	overflow:auto;
+	/*cursor:-moz-grab !important;*/ /* should this be applied with JS? */
+	font-weight:bold;
+	text-align:center;
+	background:url(timeline/film_1774_level_s.png) 1px 0px;
+	/*cursor:pointer;*/
+}
+
+#timeline h3{
+	/*names titles height*/
+	z-index:5;
+	position:relative;
+	top:89px;
+	left:0px;
+	text-shadow:0.2em 0.1em 0.05em #000;
+	color:#fff;
+}
+
+.tl-events {
+	/*thumb photos -top- height*/
+	z-index:4;
+	position:relative;
+	top:-25px;
+	left:11px;
+	width:2018px;
+	list-style:none;
+	padding:0px;
+	margin:0px;
+}
+
+.tl-events li {
+	float:left;
+	margin-right:5px;
+}
+
+.tl-events ul {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+.tl-events a {
+	/*thumb photos */
+	position:relative;
+	top:0px;
+	padding:0px;
+	margin:0px;
+}
+
+.tl-events img:hover {
+	outline:#b27755 outset thin;
+}
+
+img,a {
+	/*remove border img on firefox */
+	list-style-type:none;
+	list-style:none;
+	text-decoration:none;
+	border:0px solid #fff;
+}
+
+.tl-events ul li a:hover,
+.tl-events ul li a:focus {
+	/*outline:0;*/
+}
+
+
+
+
+/*-- from file:jplayer.golden.vintage.css --*/
+
+
+
+
+#jquery_jplayer {
+	display:none;
+	/* make #jquery_jplayer div hidden
+	 * this div contain strange number:(0.718248491301458)
+	 * and xxx-large width on firefox
+	 */
+}
+#jplayer_title_track{
+	position:relative;
+	text-align:center;
+	bottom:95px;
+	left:27px;
+	width:166px;
+	height:53px
+	color:#000;
+	font-size:10px;
+	font-weight:bold;
+	border:1px solid rgba(197, 172, 124, 0.55);
+	background:rgba(197, 172, 124, 0.85);
+	cursor:pointer;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+
+div.jp-single-player,
+div.jp-playlist-player {
+	height:40px;
+
+	/* Edit the font-size to counteract inherited font sizing.
+	 * Eg. 1.25em = 1 / 0.8em
+	 */
+
+	font-size:1em; /* No parent CSS that can effect the size in these demos */
+	/*font-family:Verdana, Arial, sans-serif;
+	line-height:1.6;*/
+}
+div.jp-interface {
+	position:relative;
+	width:213px;
+	height:140px;
+}
+div.jp-single-player div.jp-interface {
+	border-bottom:none;
+}
+div.jp-playlist-player div.jp-interface {
+}
+
+div.jp-interface ul.jp-controls {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+div.jp-interface ul.jp-controls li {
+	position:absolute;
+}
+div.jp-interface ul.jp-controls a {
+	position:absolute;
+	overflow:hidden;
+	text-indent:-999px;
+}
+a.jp-play,
+a.jp-pause {
+	top:82px;
+	width:32px;
+	height:32px;
+}
+div.jp-single-player a.jp-play,
+div.jp-single-player a.jp-pause {
+	left:40px;
+}
+div.jp-playlist-player a.jp-play,
+div.jp-playlist-player a.jp-pause {
+	left:32px;
+}
+a.jp-play {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") 0 0 no-repeat;
+}
+a.jp-play:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -32px 0 no-repeat;
+}
+a.jp-pause {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") 0 -32px no-repeat;
+	display:none;
+}
+a.jp-pause:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -32px -32px no-repeat;
+}
+a.jp-stop {
+	top:82px;
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") 0 -66px no-repeat;
+	width:32px;
+	height:32px;
+}
+div.jp-single-player a.jp-stop {
+	left:90px;
+}
+div.jp-playlist-player a.jp-stop {
+	left:158px;
+	/*stop position control*/
+}
+a.jp-stop:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -32px -66px no-repeat;
+}
+/*-x-px -y-px no-repeat; = formula for design buttons !!!*/
+
+
+
+
+a.jp-previous {
+	left:74px;
+	top:106px;
+	//background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -2px -112px no-repeat;
+	width:17px;
+	height:16px;
+}
+a.jp-previous:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -2px -112px no-repeat;
+}
+
+a.jp-next {
+	left:129px;
+	top:106px;
+	//background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") 0 -141px no-repeat;
+	width:17px;
+	height:16px;
+}
+a.jp-next:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -57px -112px no-repeat;
+}
+
+a.jp-volume-min {
+	top:106px;
+	//background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") 0 -170px no-repeat;
+	width:17px;
+	height:16px;
+}
+div.jp-single-player a.jp-volume-min {
+	left:274px;
+}
+div.jp-playlist-player a.jp-volume-min {
+	left:93px;
+}
+a.jp-volume-min:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -21px -112px no-repeat;
+}
+a.jp-volume-max {
+	top:106px;
+	//background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -57px -112px no-repeat;
+	width:17px;
+	height:16px;
+}
+div.jp-single-player a.jp-volume-max {
+	left:346px;
+}
+div.jp-playlist-player a.jp-volume-max {
+	left:111px;
+}
+a.jp-volume-max:hover {
+	background:url("jquery.jplayer/skin/jplayer.golden.vintage.png") -39px -112px no-repeat;
+}
+
+
+
+
+
+
+
+div.jp-time-remain {
+	position:absolute;
+	top:85px;
+	left:89px;
+	width:75px;
+	font-size:14px;
+	font-style:oblique;
+	font-weight:bold;
+	color:#f7e3ba;
+
+}
+div.jp-total-time {
+	text-align:right;
+}
+div.jp-single-player div.jp-play-time,
+div.jp-single-player div.jp-total-time {
+	left:130px;
+	
+}
+div.jp-playlist-player div.jp-play-time,
+div.jp-playlist-player div.jp-total-time {
+	left:74px;
+
+	/*timecode control */
+}
+div.jp-playlist {
+	width:168px;
+	position:relative;
+	top:-164px;
+	left:27px
+	
+}
+div.jp-playlist ul{
+	list-style-type:none;
+	background:rgba(255, 225, 155, 0.44);
+	border:1px solid #009be3;
+	
+	font-size:12px;
+}
+div.jp-single-player div.jp-playlist li {
+	//padding:5px 0 5px 20px;
+	font-weight:bold;
+}
+div.jp-playlist-player div.jp-playlist li {
+	direction:rtl;
+	//width:168px;
+	border-bottom:1px solid #eee;
+}
+div.jp-playlist-player div.jp-playlist li.jplayer_playlist_item_last {
+	//padding:5px 0 5px 20px;
+	//border-bottom:none;
+}
+div.jp-playlist-player div.jp-playlist li.jplayer_playlist_current {
+	direction:rtl;
+	list-style-type:square;
+	list-style-position:inside;
+}
+div.jp-playlist-player div.jp-playlist a {
+	color:#000;
+	text-decoration:none;
+}
+div.jp-playlist-player div.jp-playlist a:hover {
+	color:#fff;
+}
+div.jp-playlist-player div.jp-playlist a.jplayer_playlist_current {
+	color:#0f0f0f;
+}
+
+
+
+
+
+
+/*-- from file:jquery.panorama.css --*/
+
+
+
+.panorama-viewport {
+	direction:ltr;
+	position:relative;
+	width:633px;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+.panorama-container {
+	position:relative;
+	width:100000px;
+	margin:0;
+	padding:0;
+}
+
+.panorama-control {
+	position:absolute;
+	display:none;
+	padding:0;
+	margin:0;
+	bottom:-1px;
+	left:0;
+	width:100%;
+	height:30px;
+	background:black;
+	filter:alpha(opacity=50);
+	opacity:.5;
+	text-align:left;
+}
+.panorama-control-left, .panorama-control-right, .panorama-control-pause { 
+	float:left;
+	padding:0;
+	margin:0;
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+	line-height:30px;
+	width:33%;
+	text-align:center;
+	font-family:'Arial',sans-serif
+}
+.panorama-control-left:hover, .panorama-control-right:hover, .panorama-control-pause:hover { 
+	text-decoration:none;
+}
+.panorama-control-pause {
+	text-transform:uppercase;
+}
+.panorama-panel {
+	position:absolute;
+	display:none;
+	top:0;
+	right:0;
+	background:#009cff;
+	filter:alpha(opacity=50);
+	opacity:.5;
+	color:white;
+	padding:4px;
+}
+.panorama-panel h2 {
+	font-size:11px;
+	text-transform:uppercase;
+	font-family:Arial, sans-serif;
+	text-align:right;
+}
+.panorama-panel ul {
+	display:none;
+}
+.panorama {
+	position:relative;
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+.panorama-area {
+	border:2px solid white;
+	filter:alpha(opacity=20);
+	opacity:.2;
+	background:black;
+	font-size:100%;
+	cursor:pointer;
+	text-decoration:none;
+	color:white;
+	text-align:right;
+}
+.panorama-area-hover {
+	background:#0080e2;
+	cursor:pointer;
+} 
+
+.area0-hover {
+	background:#ff7e00;
+}
+.area1-hover {
+	background:#25bf5b;
+}
+.panorama-title {
+ 	position:absolute; 
+	right:0;
+	top:0; 
+	font-size:16px; 
+	font-family:Verdana;
+	background:#fff;
+	padding:3px;
+	filter:alpha(opacity=50);
+	opacity:.5;
+}
+
+
+
+
+
+
+
+/* from file:style_stone.css */
+
+
+
+
+.stone {
+	//direction:rtl;
+	background:url("ajax/old_paper.jpg") no-repeat center center;
+	/* url("Old_Paper.jpg") the src is from floder where this css file is */
+	width:633px;
+	height:350px;
+	padding:0px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+
+}
+
+.stone_holder {
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:593px;
+	height:310px;
+	padding:0px;
+	margin:0px;	
+	text-align:right;
+}
+.stone_content {
+	width:360px;
+	height:370px;
+	float:right;
+	font-size:20px;
+	text-align:justify;
+	/*line-height:130%;*/
+}
+
+h4 {
+	padding:0px;
+	margin:0px;
+}
+
+.stone_name {
+	font-size:22px;
+	padding:0px;
+	letter-spacing:1px;
+	font-family:stone_title;
+}
+
+@font-face {
+	font-family:stone_title;
+	src:url('ajax/FRANKB.TTF') format('truetype');
+}
+
+.stone_year_he {
+	float:right;
+	font-size:20px;
+	padding:2px 0px 2px 22px;
+}
+
+.stone_year_en {
+	float:right;
+	font-size:20px;
+	padding:2px 0px 2px 0px;
+
+}
+.stone_text {
+	font-size:18px;
+	overflow:hidden;
+	padding:2px 0px 2px 0px;
+	clear:both;
+}
+.stone_copyright {
+	font-size:14px;
+	padding:2px 0px 2px 0px;
+	clear:both;
+}
+
+.stone_photo {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:190px;
+	height:310px;
+	float:left;	
+}
+
+audio {
+	position:relative;
+	direction:ltr;
+	width:633px;
+	right:center;
+	opacity:0.9;
+	bottom:30px;
+	z-index:11;
+}
+
+
+/*	person - side_nav  */
+
+
+
+#side_nav { 
+	position:absolute;
+	top:77px;
+	left:0px;
+	height:180px; 
+	width:30px; 
+	background:rgba(255, 255, 255, 0.25);
+	float:left;
+	z-index:333;
+	-moz-box-shadow:0px 0px 20px #000;
+	-webkit-box-shadow:0px 0px 20px #000;
+	box-shadow:0px 0px 20px #000;
+
+	-webkit-border-radius:0px 11px 11px 0px;
+	-khtml-border-radius:0px 11px 11px 0px;
+	-moz-border-radius:0px 11px 11px 0px;
+	border-radius:0px 11px 11px 0px;
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+}
+
+@font-face {
+	font-family:items_sidenav;
+	src:url('ajax/Webdings.eot');
+	src:local('Webdings Regular'),
+		 local('WebdingsRegular'),
+		 local('Webdings'),
+		 url('ajax/Webdings.ttf') format('truetype');
+}
+@font-face {
+	font-family:back_sidenav;
+	src:url('ajax/Wingdings3.eot');
+	src:local('Wingdings 3 Regular'),
+		 local('Wingdings3 Regular'),
+		 local('Wingdings 3'),
+		 url('ajax/Wingdings3.ttf') format('truetype');
+}
+
+#side_nav ul {
+	font-family:items_sidenav;
+	font-size:19pt;
+	list-style:none;
+	text-decoration:none;
+}
+
+#side_nav ul .gallery4 {
+	font-family:back_sidenav;
+}
+
+#side_menu li {
+	cursor:pointer;
+	padding:5px 0px 0px 5px;
+	position:relative;
+	top:0px;
+	left:38px;
+}
+
+#side_menu a {
+	padding:0px;
+	color:#754717;
+	border-bottom:1px solid rgba(91, 91, 91, 0.22);
+}
+
+#side_menu a:hover {
+	color:#996322;
+	/*text-decoration:none;
+	font-weight:bold;*/
+}
+
+
+
+
+
+/* album element */
+
+
+
+.youtube-player {
+	visibility:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:222;
+}
+
+
+.album {
+	visibility:hidden;
+	direction:ltr;
+	color:#eee;
+	left:0px;
+	top:0px;
+	width:633px;
+	height:350px;
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+}
+
+
+
+/* - from file:jScrollPane.css - */
+
+
+
+.jScrollPaneContainer {
+	position:relative;
+	overflow:hidden;
+	font-size:21px;
+	z-index:1;
+}
+
+.jScrollPaneTrack {
+	position:absolute;
+	right:0;
+	top:0;
+	height:100%;
+	background:rgba(255, 255, 255, 0.35);
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+}
+.jScrollPaneDrag {
+	position:absolute;
+	background:rgba(200, 137, 66, 0.45);
+	-webkit-border-radius:8px;
+	-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+		cursor:pointer;
+
+	behavior:url(lib/pie/PIE.htc);/* css3pie for IE */
+
+	overflow:hidden;
+}
+.jScrollPaneDragTop {
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+}
+.jScrollPaneDragBottom {
+	position:absolute;
+	bottom:0;
+	left:0;
+	overflow:hidden;
+}
+a.jScrollArrowUp {
+	background:url("ajax/arrow.png") no-repeat right top;
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	z-index:1;
+	top:0;
+	right:0;
+	text-indent:-2000px;
+	overflow:hidden;
+	/*background-color:#666;*/
+	height:9px;
+}
+a.jScrollArrowUp:hover {
+	/*background-color:#f60;*/
+
+}
+
+a.jScrollArrowDown {
+	background:url("ajax/arrow.png") 0px -10px no-repeat;
+	cursor:pointer;
+	display:block;
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	right:0;
+	text-indent:-2000px;
+	overflow:hidden;
+	/*background-color:#666;*/
+	height:9px;
+}
+a.jScrollArrowDown:hover {
+	/*background-color:#f60;*/
+}
+.jScrollPaneDrag:hover {
+	background:rgba(200, 137, 66, 0.65);
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+	/*background-color:#f00;*/
+}
+
+
+
+
+
+
+
+
+/*
+ * FancyBox - jQuery Plugin
+ * Simple and fancy lightbox alternative
+ *
+ * Examples and documentation at:http://fancybox.net
+ * 
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+ *
+ * Version:1.3.1 (05/03/2010)
+ * Requires:jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+
+#fancybox-loading {
+	position:fixed;
+	top:50%;
+	left:50%;
+	height:40px;
+	width:40px;
+	margin-top:-20px;
+	margin-left:-20px;
+	cursor:pointer;
+	overflow:hidden;
+	z-index:1104;
+	display:none;
+}
+
+* html #fancybox-loading {	/* IE6 */
+	position:absolute;
+	margin-top:0;
+}
+
+#fancybox-loading div {
+	position:absolute;
+	top:0;
+	left:0;
+	width:40px;
+	height:480px;
+	background-image:url('pano/css/fancybox.png');
+}
+
+#fancybox-overlay {
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:#000;
+	z-index:1100;
+	display:none;
+}
+
+* html #fancybox-overlay {	/* IE6 */
+	position:absolute;
+	width:100%;
+}
+
+#fancybox-tmp {
+	padding:0;
+	margin:0;
+	border:0;
+	overflow:auto;
+	display:none;
+}
+
+#fancybox-wrap {
+	position:absolute;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	z-index:1101;
+	display:none;
+}
+
+#fancybox-outer {
+	position:relative;
+	width:100%;
+	height:100%;
+	background:#FFF;
+}
+
+#fancybox-inner {
+	position:absolute;
+	top:0;
+	left:0;
+	width:1px;
+	height:1px;
+	padding:0;
+	margin:0;
+	outline:none;
+	overflow:hidden;
+}
+
+#fancybox-hide-sel-frame {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:transparent;
+}
+
+#fancybox-close {
+	position:absolute;
+	top:-15px;
+	right:-15px;
+	width:30px;
+	height:30px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px 0px;
+	cursor:pointer;
+	z-index:1103;
+	display:none;
+}
+
+#fancybox_error {
+	color:#444;
+	font:normal 12px/20px Arial;
+	padding:7px;
+	margin:0;
+}
+
+#fancybox-content {
+	height:auto;
+	width:auto;
+	padding:0;
+	margin:0;
+}
+
+#fancybox-img {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	border:none;
+	outline:none;
+	line-height:0;
+	vertical-align:top;
+	-ms-interpolation-mode:bicubic;
+}
+
+#fancybox-frame {
+	position:relative;
+	width:100%;
+	height:100%;
+	border:none;
+	display:block;
+}
+
+#fancybox-title {
+	position:absolute;
+	bottom:0;
+	left:0;
+	font-family:Arial;
+	font-size:12px;
+	z-index:1102;
+}
+
+.fancybox-title-inside {
+	padding:10px 0;
+	text-align:center;
+	color:#333;
+}
+
+.fancybox-title-outside {
+	padding-top:5px;
+	color:#FFF;
+	text-align:center;
+	font-weight:bold;
+}
+
+.fancybox-title-over {
+	color:#FFF;
+	text-align:left;
+}
+
+#fancybox-title-over {
+	padding:10px;
+	background-image:url('pano/css/fancy_title_over.png');
+	display:block;
+}
+
+#fancybox-title-wrap {
+	display:inline-block;
+}
+
+#fancybox-title-wrap span {
+	height:32px;
+	float:left;
+	letter-spacing:1px;
+
+}
+#fancybox-title-left {
+	padding-left:15px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -90px;
+	background-repeat:no-repeat;
+}
+
+
+#fancybox-title-main {
+	font-weight:bold;
+	line-height:29px;
+	background-image:url('pano/css/fancybox-x.png');
+	background-position:0px -40px;
+	color:#FFF;
+}
+
+#fancybox-title-right {
+	padding-left:15px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-55px -90px;
+	background-repeat:no-repeat;
+}
+
+#fancybox-left, #fancybox-right {
+	position:absolute;
+	bottom:0px;
+	height:100%;
+	width:35%;
+	cursor:pointer;
+	outline:none;
+	background-image:url('pano/css/blank.gif');
+	z-index:1102;
+	display:none;
+}
+
+#fancybox-left {
+	left:0px;
+}
+
+#fancybox-right {
+	right:0px;
+}
+
+#fancybox-left-ico, #fancybox-right-ico {
+	position:absolute;
+	top:50%;
+	left:-9999px;
+	width:30px;
+	height:30px;
+	margin-top:-15px;
+	cursor:pointer;
+	z-index:1102;
+	display:block;
+}
+
+#fancybox-left-ico {
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -30px;
+}
+
+#fancybox-right-ico {
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -60px;
+}
+
+#fancybox-left:hover, #fancybox-right:hover {
+	visibility:visible;    /* IE6 */
+}
+
+#fancybox-left:hover span {
+	left:20px;
+}
+
+#fancybox-right:hover span {
+	left:auto;
+	right:20px;
+}
+
+.fancy-bg {
+	position:absolute;
+	padding:0;
+	margin:0;
+	border:0;
+	width:20px;
+	height:20px;
+	z-index:1001;
+}
+
+#fancy-bg-n {
+	top:-20px;
+	left:0;
+	width:100%;
+	background-image:url('pano/css/fancybox-x.png');
+}
+
+#fancy-bg-ne {
+	top:-20px;
+	right:-20px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -162px;
+}
+
+#fancy-bg-e {
+	top:0;
+	right:-20px;
+	height:100%;
+	background-image:url('pano/css/fancybox-y.png');
+	background-position:-20px 0px;
+}
+
+#fancy-bg-se {
+	bottom:-20px;
+	right:-20px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -182px; 
+}
+
+#fancy-bg-s {
+	bottom:-20px;
+	left:0;
+	width:100%;
+	background-image:url('pano/css/fancybox-x.png');
+	background-position:0px -20px;
+}
+
+#fancy-bg-sw {
+	bottom:-20px;
+	left:-20px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -142px;
+}
+
+#fancy-bg-w {
+	top:0;
+	left:-20px;
+	height:100%;
+	background-image:url('pano/css/fancybox-y.png');
+}
+
+#fancy-bg-nw {
+	top:-20px;
+	left:-20px;
+	background-image:url('pano/css/fancybox.png');
+	background-position:-40px -122px;
+}
+
+/* IE */
+
+#fancybox-loading.fancybox-ie div	{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_loading.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-close		{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_close.png', sizingMethod='scale'); }
+
+.fancybox-ie #fancybox-title-over	{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_over.png', sizingMethod='scale'); zoom:1; }
+.fancybox-ie #fancybox-title-left	{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_left.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-title-main	{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_main.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-title-right	{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_title_right.png', sizingMethod='scale'); }
+
+.fancybox-ie #fancybox-left-ico		{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_left.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-right-ico	{ background:transparent; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_nav_right.png', sizingMethod='scale'); }
+
+.fancybox-ie .fancy-bg { background:transparent !important; }
+
+.fancybox-ie #fancy-bg-n	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_n.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-ne	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_ne.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-e	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_e.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-se	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_se.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-s	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_s.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-sw	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_sw.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-w	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_w.png', sizingMethod='scale'); }
+.fancybox-ie #fancy-bg-nw	{ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='fancybox/fancy_shadow_nw.png', sizingMethod='scale'); }
